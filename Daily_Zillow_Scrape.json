@@ -142,7 +142,7 @@
       "webhookId": "c5122da4-3e13-45a2-a0db-a071010a7c6b",
       "credentials": {
         "gmailOAuth2": {
-          "id": "W6GxTFbewdDuLjXj",
+          "id": "",
           "name": "rj2004 gmail"
         }
       }
