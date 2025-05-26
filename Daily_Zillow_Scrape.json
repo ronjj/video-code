@@ -1,0 +1,253 @@
+{
+  "name": "My workflow 4",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 9
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "6c0838e2-cf3e-4d0a-b74a-31473302b0b0",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "https://www.zillow.com/async-create-search-page-state",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "origin",
+              "value": "https://www.zillow.com"
+            },
+            {
+              "name": "priority",
+              "value": "u=1, i"
+            },
+            {
+              "name": "referer",
+              "value": "https://www.zillow.com/homes/?category=RECENT_SEARCH&searchQueryState=%7B%22filterState%22%3A%7B%22isTownhouse%22%3A%7B%22value%22%3Atrue%7D%2C%22isLotLand%22%3A%7B%22value%22%3Atrue%7D%2C%22isManufactured%22%3A%7B%22value%22%3Atrue%7D%2C%22isMultiFamily%22%3A%7B%22value%22%3Atrue%7D%2C%22isApartment%22%3A%7B%22value%22%3Atrue%7D%2C%22isCondo%22%3A%7B%22value%22%3Atrue%7D%2C%22isSingleFamily%22%3A%7B%22value%22%3Atrue%7D%2C%22isApartmentOrCondo%22%3A%7B%22value%22%3Atrue%7D%2C%22isRecentlySold%22%3A%7B%22value%22%3Afalse%7D%2C%22isPreMarketPreForeclosure%22%3A%7B%22value%22%3Afalse%7D%2C%22isPreMarketForeclosure%22%3A%7B%22value%22%3Afalse%7D%2C%22isForRent%22%3A%7B%22value%22%3Afalse%7D%2C%22isForSaleByAgent%22%3A%7B%22value%22%3Atrue%7D%2C%22isForSaleByOwner%22%3A%7B%22value%22%3Atrue%7D%2C%22isAuction%22%3A%7B%22value%22%3Atrue%7D%2C%22isComingSoon%22%3A%7B%22value%22%3Atrue%7D%2C%22isForSaleForeclosure%22%3A%7B%22value%22%3Atrue%7D%2C%22isNewConstruction%22%3A%7B%22value%22%3Atrue%7D%2C%22sortSelection%22%3A%7B%22value%22%3A%22globalrelevanceex%22%7D%7D%2C%22regionSelection%22%3A%5B%7B%22regionId%22%3A12530%7D%5D%2C%22usersSearchTerm%22%3A%22Manhattan%20New%20York%20City%20NY%20homes%22%7D"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "cookie",
+              "value": "zguid=24|%245084f4f5-6900-433a-a5e9-ba15fae1b4e9;_ga=GA1.2.1111110824.1745173821;zjs_anonymous_id=%225084f4f5-6900-433a-a5e9-ba15fae1b4e9%22;zjs_user_id=null;zg_anonymous_id=%22db1ba022-729f-4c7d-bca9-573fee632361%22;_pxvid=847cd03b-1e15-11f0-971b-3eb4e412fd51;_gcl_au=1.1.941846100.1745173822;_scid=ZzVqO96FYX9MTEnv-_UUyVhKJrk_OuDv;_tt_enable_cookie=1;_ttp=01JSA7EF4VN277BXZHBWGBJZX5_.tt.1;_fbp=fb.1.1745173822645.769232302136756064;_pin_unauth=dWlkPU4ySTJOR1U0TkRVdE1XUmlOeTAwTkRkaExUZzNPVEl0TTJVM1ltUTJNRFF4TkdFNA;zgsession=1|e1116c85-37cd-4680-947c-0b888403bf3f;pxcts=b684ebad-37e2-11f0-885a-17bbd1f3efd0;_ScCbts=%5B%22570%3Bchrome.2%3A2%3A5%22%5D;DoubleClickSession=true;_sctr=1%7C1747972800000;_gid=GA1.2.1123872793.1748127220;_lr_env_src_ats=false;optimizelyEndUserId=oeu1748202802518r0.3333323962457161;pjs-last-visited-page=/research/data/;pjs-pages-visited=1;zgcus_aeut=AEUUT_e9f9df2b-39a1-11f0-abac-7e7b93f125a1;zgcus_aeuut=AEUUT_e9f9df2b-39a1-11f0-abac-7e7b93f125a1;optimizelySession=1748202802770;__spdt=4d9f29cf2f104b529b0de4bb6ccdd404;search=6|1750797190212%7Crect%3D40.96821173692904%2C-73.71721056152342%2C40.592816863456356%2C-74.24043443847654%26rid%3D12530%26disp%3Dmap%26mdm%3Dauto%26p%3D10%26listPriceActive%3D1%26fs%3D1%26fr%3D0%26mmm%3D0%26rs%3D0%26singlestory%3D0%26housing-connector%3D0%26parking-spots%3Dnull-%26abo%3D0%26garage%3D0%26pool%3D0%26ac%3D0%26waterfront%3D0%26finished%3D0%26unfinished%3D0%26cityview%3D0%26mountainview%3D0%26parkview%3D0%26waterview%3D0%26hoadata%3D1%26zillow-owned%3D0%263dhome%3D0%26showcase%3D0%26featuredMultiFamilyBuilding%3D0%26onlyRentalStudentHousingType%3D0%26onlyRentalIncomeRestrictedHousingType%3D0%26onlyRentalMilitaryHousingType%3D0%26onlyRentalDisabledHousingType%3D0%26onlyRentalSeniorHousingType%3D0%26commuteMode%3Ddriving%26commuteTimeOfDay%3Dnow%09%0912530%09%7B%22isList%22%3Atrue%2C%22isMap%22%3Atrue%7D%09%09%09%09%09;_clck=1rzjgpm%7C2%7Cfw8%7C0%7C1936;JSESSIONID=8E9612678EFD5DB49CC3D2B2EC8D2A63;_rdt_uuid=1745173822506.f65e3000-663e-475c-b5e0-6c40b3012555;_scid_r=dLVqO96FYX9MTEnv-_UUyVhKJrk_OuDvtu0hDA;tfpsi=bbbd56f5-1b88-43ad-8bea-cf9246961337;_dd_s=rum=0&expire=1748265133044;web-platform-data=%7B%22wp-dd-rum-session%22%3A%7B%22doNotTrack%22%3Atrue%7D%7D;_lr_retry_request=true;__gads=ID=25a8e4c56a0957ae:T=1745173833:RT=1748264235:S=ALNI_MaJavaqWksjsA0TJEBAwrMU3RceiQ;__gpi=UID=000010a4323403d2:T=1745173833:RT=1748264235:S=ALNI_MZe_YN_Kc_PyDWBenkiZRa1iMR5mg;__eoi=ID=4fefeede558f12cc:T=1745173833:RT=1748264235:S=AA-AfjaRj8W51kHwkSrsAWSG2-_t;_px3=bb51b1817662620703e450a573a84677f02170ec1ee96f45b094b7e7d6079064:tUglVTX+F4J8VnFmQm0vKESh/SHiKPaCw95WMspbeKouEPi1NC9jfFVohT+Vgge1fEbIes70TpXajAyKbfFLbw==:1000:KtxE6Cgk7QpkqKglt2dqHOvpTpSR9lM9x4x8il5jr2CklCFDrR93RPYhDQ9EH4Oo6wPpqatKsKLqugtY52vswSd5gqTl3PdJtjR6GIKzXRpViv9VCXamUhrPkWj9ezm1Tm6rhdSXfbX7aBno5fqeIWOnHFGE93piyMWvPjwKaqtEg8fC7vI5qTu+vryjhAGzHl6TQ8ZG5WuvquQC6/EwWzb1axJho6aVP6Rsi/AsAYQ=;connectId=%7B%22vmuid%22%3A%22VCTdsZ-au4UhcC4TaJC1IaS9YthFs7fdXHPv03JJFAFGSgvDM8tLFAp9jmd3Owrev7_gKASsVtH7XqA_Z7V2uA%22%2C%22connectid%22%3A%22VCTdsZ-au4UhcC4TaJC1IaS9YthFs7fdXHPv03JJFAFGSgvDM8tLFAp9jmd3Owrev7_gKASsVtH7XqA_Z7V2uA%22%2C%22connectId%22%3A%22VCTdsZ-au4UhcC4TaJC1IaS9YthFs7fdXHPv03JJFAFGSgvDM8tLFAp9jmd3Owrev7_gKASsVtH7XqA_Z7V2uA%22%2C%22ttl%22%3A86400000%2C%22lastSynced%22%3A1748264234570%2C%22lastUsed%22%3A1748264282864%7D;AWSALB=JTR5Ime3Aaqz2aOvBz3Xfe6qMFIPG3W3O89wWlNkwgtGjkM/IkBWhDTgnlfIYA9ZZIcrQePjxUU+wsx8+vfNeAE+yYANvJTZaf/VEBn3jYGrsjRjaiof/Hjzbkht;AWSALBCORS=JTR5Ime3Aaqz2aOvBz3Xfe6qMFIPG3W3O89wWlNkwgtGjkM/IkBWhDTgnlfIYA9ZZIcrQePjxUU+wsx8+vfNeAE+yYANvJTZaf/VEBn3jYGrsjRjaiof/Hjzbkht;_uetsid=efd648f038f111f08661a14c594ab928;_uetvid=85280f401e1511f0baf65da827b4241b;ttcsid=1748263981412::gxMNnaRqhlqVUqYiKPPS.6.1748264284072;_clsk=12v8jpi%7C1748264284376%7C4%7C0%7Cl.clarity.ms%2Fcollect;ttcsid_CN5P33RC77UF9CBTPH9G=1748263981412::4Fgz4w9RQLGmuoWrMuUV.6.1748264290213;"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"searchQueryState\": {\n    \"pagination\": {\n      \"currentPage\": 2\n    },\n    \"isMapVisible\": false,\n    \"mapBounds\": {\n      \"west\": -74.047237,\n      \"east\": -73.910408,\n      \"south\": 40.683935,\n      \"north\": 40.877483\n    },\n    \"usersSearchTerm\": \"Manhattan New York City NY homes\",\n    \"regionSelection\": [\n      {\n        \"regionId\": 12530\n      }\n    ],\n    \"filterState\": {\n      \"sortSelection\": {\n        \"value\": \"globalrelevanceex\"\n      }\n    },\n    \"isListVisible\": true\n  },\n  \"wants\": {\n    \"cat1\": [\n      \"listResults\"\n    ],\n    \"cat2\": [\n      \"total\"\n    ]\n  },\n  \"requestId\": 2,\n  \"isDebugRequest\": false\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        0
+      ],
+      "id": "ac840ee5-cef8-4ca6-9b0a-195c7f65a4e5",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse Zillow listing data for n8n\n// Assumes the input data is available as $input.all()[0].json\n\nconst inputData = $input.all()[0].json;\n\n// Extract the listings array\nconst listings = inputData?.cat1?.searchResults?.listResults || [];\n\n// Parse and clean up each listing\nconst parsedListings = listings.map(listing => {\n  return {\n    // Basic property info\n    zpid: listing.zpid,\n    address: listing.address,\n    price: listing.price,\n    unformattedPrice: listing.unformattedPrice,\n    beds: listing.beds,\n    baths: listing.baths,\n    area: listing.area,\n    \n    // Property details\n    homeType: listing.hdpData?.homeInfo?.homeType,\n    homeStatus: listing.hdpData?.homeInfo?.homeStatus,\n    statusText: listing.statusText,\n    \n    // Location\n    latitude: listing.latLong?.latitude,\n    longitude: listing.latLong?.longitude,\n    addressStreet: listing.addressStreet,\n    addressCity: listing.addressCity,\n    addressState: listing.addressState,\n    addressZipcode: listing.addressZipcode,\n    \n    // Market info\n    daysOnZillow: listing.hdpData?.homeInfo?.daysOnZillow,\n    zestimate: listing.hdpData?.homeInfo?.zestimate,\n    rentZestimate: listing.hdpData?.homeInfo?.rentZestimate,\n    priceChange: listing.hdpData?.homeInfo?.priceChange,\n    priceReduction: listing.hdpData?.homeInfo?.priceReduction,\n    \n    // URLs and images\n    detailUrl: listing.detailUrl,\n    imgSrc: listing.imgSrc,\n    hasImage: listing.hasImage,\n    \n    // Additional features\n    flexFieldText: listing.flexFieldText,\n    contentType: listing.contentType,\n    brokerName: listing.brokerName,\n    \n    // Open house info (if available)\n    hasOpenHouse: listing.hasOpenHouse || false,\n    openHouseStartDate: listing.openHouseStartDate,\n    openHouseEndDate: listing.openHouseEndDate,\n    openHouseDescription: listing.openHouseDescription,\n    \n    // Photo URLs (first 5 to avoid too much data)\n    photos: listing.carouselPhotos?.slice(0, 5)?.map(photo => photo.url) || [],\n    \n    // Raw listing ID for reference\n    id: listing.id\n  };\n});\n\n// Return the parsed listings\nreturn parsedListings.map(listing => ({ json: listing }));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        0
+      ],
+      "id": "9a8d96d0-4b4e-4e32-9ae1-cc955b539c88",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get ALL input items, not just the first one\nconst allInputs = $input.all();\n\n// Extract the JSON data from each input item\nconst properties = allInputs.map(item => item.json);\n\n// Format each property into readable text\nconst formattedProperties = properties.map((property, index) => {\n  return `\nPROPERTY ${index + 1}\n================\nAddress: ${property.address || 'Not specified'}\nPrice: ${property.price || 'Not specified'}\nBeds: ${property.beds || 'N/A'} | Baths: ${property.baths || 'N/A'}\nArea: ${property.area ? property.area + ' sq ft' : 'Not specified'}\nType: ${property.homeType ? property.homeType.replace('_', ' ') : 'Not specified'}\nStatus: ${property.statusText || 'Not specified'}\nDays on Market: ${property.daysOnZillow || 'Not specified'}\n${property.priceReduction ? 'Price Reduction: ' + property.priceReduction : ''}\nBroker: ${property.brokerName || 'Not specified'}\n${property.hasOpenHouse ? 'Open House: ' + property.openHouseDescription : ''}\nZillow Link: ${property.detailUrl || 'Not available'}\n\n${property.flexFieldText ? 'Highlight: ' + property.flexFieldText : ''}\n`;\n});\n\n// Join all properties with separators\nconst emailBody = `\nNYC PROPERTY LISTINGS\n====================\n\n${formattedProperties.join('\\n---\\n')}\n\nTotal Properties Found: ${properties.length}\n`;\n\nreturn { emailBody };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        0
+      ],
+      "id": "9d748c48-43fc-428c-9bb2-8a1c0f087b21",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "sendTo": "ronaldjabouinj@gmail.com",
+        "subject": "New Real Estate Listings For You",
+        "emailType": "text",
+        "message": "=Hey Ronald, here's you're updated list of properties in Manhattan.\n{{ $json.emailBody }}",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1100,
+        0
+      ],
+      "id": "f541f018-618a-489d-9378-fb6026c324b2",
+      "name": "Gmail",
+      "webhookId": "c5122da4-3e13-45a2-a0db-a071010a7c6b",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "W6GxTFbewdDuLjXj",
+          "name": "rj2004 gmail"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "da3833db-e98d-4612-85dc-197350723915",
+              "leftValue": "={{ $json.unformattedPrice }}",
+              "rightValue": 1000000,
+              "operator": {
+                "type": "number",
+                "operation": "lt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        660,
+        0
+      ],
+      "id": "ffbe7a5f-bf74-4424-b357-0ae382ea95e5",
+      "name": "Filter"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Filter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Gmail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "6849c57e-0a2a-4cb4-953e-be9e240536f8",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "cff051de51c1a3ffd27526465c579fe778bdc813745f4330627950b41c07ddbe"
+  },
+  "id": "mMZNzgMDL1e3scrf",
+  "tags": []
+}
